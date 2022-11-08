@@ -30,7 +30,17 @@ interface ButtonParams extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const TestButton: FC<ButtonParams> = ({ ...props }): JSX.Element => {
   return (
-    <button {...props} className="w-[200px] h-[60px] bg-red-500 text-white">
+    <button
+      {...props}
+      style={{
+        width: 200,
+        height: 60,
+        color: "magenta",
+        backgroundColor: "#FFFFFF",
+        border: "2px solid magenta",
+        borderRadius: 9,
+      }}
+    >
       {props.label}
     </button>
   );
