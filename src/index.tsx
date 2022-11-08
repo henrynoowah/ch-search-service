@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { SendBirdProvider, ChannelList, Channel } from "sendbird-uikit";
+import React, { ButtonHTMLAttributes, FC } from "react";
+import { Channel, ChannelList, SendBirdProvider } from "sendbird-uikit";
 
 interface Params {
   appId: string;
@@ -24,4 +24,16 @@ const CommunicationWindow: FC<Params> = ({ ...props }): JSX.Element => {
   );
 };
 
-export { CommunicationWindow };
+interface ButtonParams extends ButtonHTMLAttributes<HTMLButtonElement> {
+  label: string;
+}
+
+const TestButton: FC<ButtonParams> = ({ ...props }): JSX.Element => {
+  return (
+    <button {...props} className="w-[200px] h-[60px] bg-red-500 text-white">
+      {props.label}
+    </button>
+  );
+};
+
+export { CommunicationWindow, TestButton };

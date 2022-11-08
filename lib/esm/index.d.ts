@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { ButtonHTMLAttributes, FC } from "react";
 interface Params {
     appId: string;
     userId: string;
@@ -7,4 +7,8 @@ interface Params {
     channelUrl: string;
 }
 declare const CommunicationWindow: FC<Params>;
-export { CommunicationWindow };
+interface ButtonParams extends ButtonHTMLAttributes<HTMLButtonElement> {
+    label: string;
+}
+declare const TestButton: FC<ButtonParams>;
+export { CommunicationWindow, TestButton };
