@@ -39,6 +39,7 @@ const TestButton: FC<ButtonParams> = ({ ...props }): JSX.Element => {
         backgroundColor: "#FFFFFF",
         border: "2px solid magenta",
         borderRadius: 9,
+        ...props.style,
       }}
     >
       {props.label}
