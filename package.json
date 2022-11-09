@@ -1,7 +1,7 @@
 {
-  "name": "@noowah/ch-communication-window",
-  "version": "1.0.2",
-  "description": "ch communication window react component",
+  "name": "@noowah/ch-search-service",
+  "version": "1.0.0",
+  "description": "ch-search-service",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -27,6 +27,7 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
+    "@azure/search-documents": "^11.3.0",
     "sendbird-uikit": "^2.7.2"
   }
 }
