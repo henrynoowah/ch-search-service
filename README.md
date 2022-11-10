@@ -27,8 +27,6 @@ yarn add @noowah/ch-search-service
 const azsearch: Promise<{ results: SearchResults; totalCount: number }>;
 ```
 
-````
-
 returned value:
 
 - results : `SearchReuslts`
@@ -48,7 +46,7 @@ type SearchResults = (
   | FaqDocument
   | FaqCategoryDocument
 )[];
-````
+```
 
 - totalCount : `number`
 
