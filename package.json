@@ -1,7 +1,8 @@
 {
   "name": "@noowah/ch-search-service",
   "version": "1.0.0",
-  "description": "ch-search-service",
+  "description": "Typescript SDK for CloudHospital Azure search service: ch-search-service ",
+  "homepage": "https://github.com/henrynoowah/ch-search-service#readme",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
