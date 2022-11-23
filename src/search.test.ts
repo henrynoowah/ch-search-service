@@ -20,6 +20,7 @@ test("Search Mina Plastic Surgerya", async () => {
     const { results } = await azsearch(params);
     expect(results[0].Id).toBe("10a038b4-a11a-469a-bb57-bf4e1c764325");
   } catch (e) {
-    // expect(e).toMatch("Error");
+    expect(e).toBeInstanceOf("string");
+    console.log(e);
   }
 });
